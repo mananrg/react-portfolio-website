@@ -14,7 +14,7 @@ const DownloadButton = () => {
   };
 
   return (
-     <button  onClick={handleDownload} id="Lets-Connect" >Download Resume<ArrowRightCircle size={25} /></button>
+     <button  onClick={handleDownload} className="white-button" id="Lets-Connect" >Download Resume</button>
   );
 };
 

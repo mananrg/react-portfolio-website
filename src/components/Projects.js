@@ -86,6 +86,7 @@ export const Projects = () => {
                     </Tab.Pane>
                   </Tab.Content>
                  </Tab.Container> 
+                 <a href="https://github.com/mananrg" id="github-repo">ALL PROJECTS</a>
               </div>}
             </TrackVisibility>
           </Col>
