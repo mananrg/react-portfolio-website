@@ -1,8 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import Arduino from "../assets/img/Arduino.jpeg";
+import ComputerVision from "../assets/img/ComputerVision.jpeg";
+import DeepLearningComputerVision from "../assets/img/DeepLearningComputerVision.jpeg";
+import Django from "../assets/img/Django.jpeg";
+import Flask from "../assets/img/Flask.jpeg";
+import Esp32 from "../assets/img/Esp32.jpeg";
+import FlutterOLX from "../assets/img/Flutter OLX Clone.jpeg";
+import MachineLearningND from "../assets/img/machine-learning-nanodegree.svg";
+import NLP from "../assets/img/NLP.jpeg";
+import PythonND from "../assets/img/python-nanodegree.svg";
+import tensorflow from "../assets/img/tensorflow.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,34 +19,58 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "App Development",
+      description: "OLX CLONE",
+      imgUrl: FlutterOLX,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Web Development",
+      description: "Django Web Dev Fullstack",
+      imgUrl: Django,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Web Development",
+      description: "Flask Bootcamp",
+      imgUrl: Flask,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Programming",
+      description: "Udacity - Python Nanodegree",
+      imgUrl: PythonND,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Machine Learning",
+      description: "Udacity - Machine Learning Nanodegree",
+      imgUrl: MachineLearningND,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Computer Vision",
+      description: "Master Computer Vision - OpenCV3",
+      imgUrl: ComputerVision,
+    },
+    {
+      title: "Natural Language Processing",
+      description: "NLP using spacy and NLTK",
+      imgUrl: NLP,
+    },
+    {
+      title: "Deep Learning",
+      description: "Deep Learning using Tensorflow and Machine Learning",
+      imgUrl: tensorflow,
+    },
+    {
+      title: "Computer Vision",
+      description: "Autonomous Car",
+      imgUrl: DeepLearningComputerVision,
+    },    {
+      title: "IoT",
+      description: "Esp32 for Arduino Makers",
+      imgUrl: Esp32,
+    },
+    {
+      title: "IoT",
+      description: "Introduction to Arduino",
+      imgUrl: Arduino,
     },
   ];
 
@@ -50,14 +82,14 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
+                <h2>Projects and Certifications</h2>
            <Tab.Container id="projects-tabs" defaultActiveKey="first"> 
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">App Dev</Nav.Link>
+                      <Nav.Link eventKey="first">Certifications</Nav.Link>
                     </Nav.Item>
                      <Nav.Item>
-                      <Nav.Link eventKey="second">Web Dev</Nav.Link>
+                      <Nav.Link eventKey="second">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Miscellaneous</Nav.Link>
@@ -78,11 +110,11 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <p>Coming Soon</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Coming Soon</p>
                     </Tab.Pane>
                   </Tab.Content>
                  </Tab.Container> 

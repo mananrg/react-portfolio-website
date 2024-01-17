@@ -89,6 +89,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  backdrop-filter: blur(60px);
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -103,11 +104,15 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
-  opacity: 0.75;
+  opacity: 1;
+
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 span.navbar-text {
     display: flex;
@@ -226,9 +231,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	background-color: #fff;
 	height: 2px;
 }
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+/* nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
-}
+} */
 
 /************ Banner Css ************/
 .banner {
@@ -360,6 +365,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: end;
   text-decoration: underline;
   padding-top: 30px;
+  padding-bottom: 100px;
   font-size: larger;
 }
 .project h2 {
@@ -385,7 +391,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  background-color:white rgb(255 255 255 / 10%); 
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
@@ -395,7 +401,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
-  color: #fff;
+  color: white;
   width: 100%;
   font-size: 17px;
   letter-spacing: 0.8px;
@@ -428,6 +434,7 @@ background-color: white;
 }
 .project .nav.nav-pills .nav-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
+    color: #3a3a3a
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -572,6 +579,10 @@ background-color: white;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.contact-padding p{
+  margin: 0 !important;
+  padding-top: 2px !important;
 }
 .newsletter-bx {
   background: #FFFFFF;
