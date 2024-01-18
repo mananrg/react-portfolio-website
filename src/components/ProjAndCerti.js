@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { Cards } from "./Cards";
-import Arduino from "../assets/img/Arduino.jpeg";
+import Arduino from "../assets/img/Certificates/Arduino.jpeg";
 import ComputerVision from "../assets/img/Certificates/ComputerVision.jpeg";
 import DeepLearningComputerVision from "../assets/img/Certificates/DeepLearningComputerVision.jpeg";
 import Django from "../assets/img/Certificates/Django.jpeg";
