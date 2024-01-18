@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
+import { ProjAndCertificates } from "./components/ProjAndCerti";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import React, { useEffect } from 'react';
@@ -17,7 +17,7 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
-      <Projects />
+      <ProjAndCertificates />
 {/*      <Contact />*/}
       <Footer />
     </div>

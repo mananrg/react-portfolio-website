@@ -1,10 +1,11 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter95 from "../assets/img/meter1.svg";
+import meter85 from "../assets/img/meter85.svg";
+import meter60 from "../assets/img/meter60.svg";
+import meter75 from "../assets/img/meter75.svg";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -35,47 +36,47 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Experienced Python Developer, proficient in Mobile Application Development, Full Stack Developmen Natural Language Processing and Computer Vision and Machine Learning.</p>
+                        <p>Experienced Python Developer, proficient in Mobile Application Development, Full Stack Development Natural Language Processing and Computer Vision and Machine Learning.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                         <div className="item">
-  <img src={meter1} alt="Python Icon" />  
+  <img src={meter85} alt="Python Icon" />  
   <h5>Python</h5>
 </div>
 
 <div className="item">
-  <img src={meter1} alt="Dart Icon" />
+  <img src={meter85} alt="Dart Icon" />
   <h5>Flutter & Dart</h5>  
 </div>
 
 <div className="item">
-  <img src={meter1} alt="SQL Icon" />
-  <h5>Database</h5>
+  <img src={meter60} alt="Swift Icon" />
+  <h5>Swift</h5>
 </div>
 
 <div className="item">  
-  <img src={meter1} alt="Firebase Icon" />
-  <h5>Familiar with Firebase</h5>
+  <img src={meter85} alt="Firebase Icon" />
+  <h5>Flask</h5>
 </div>
 
 <div className="item">
-  <img src={meter1} alt="React Icon" />
-  <h5>React.js web development</h5>
+  <img src={meter60} alt="React Icon" />
+  <h5>NLP</h5>
 </div>
 
 <div className="item">
-  <img src={meter1} alt="Machine Learning Icon" />
-  <h5>Machine learning and deep learning</h5>  
+  <img src={meter85} alt="Machine Learning Icon" />
+  <h5>Machine Learning</h5>  
 </div>
 
 <div className="item">
-  <img src={meter1} alt="Computer Vision Icon" />
-  <h5>Computer vision techniques</h5>
+  <img src={meter85} alt="Computer Vision Icon" />
+  <h5>Computer Vision</h5>
 </div>
-
+{/*https://nikitahl.github.io/svg-circle-progress-generator*/}
 
 
 <div className="item">
-  <img src={meter1} alt="Django Icon" />
+  <img src={meter75} alt="Django Icon" />
   <h5>Django</h5>
 </div> 
                         </Carousel>
