@@ -14,6 +14,7 @@ import tensorflow from "../assets/img/tensorflow.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import ImageSlider from "./ProjectSlider";
 
 export const Projects = () => {
 
@@ -82,7 +83,7 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects and Certifications</h2>
+                <h2 className="project-certificate-title">Projects and Certifications</h2>
            <Tab.Container id="projects-tabs" defaultActiveKey="first"> 
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -111,7 +112,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Coming Soon</p>
+                    <ImageSlider />
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>Coming Soon</p>
