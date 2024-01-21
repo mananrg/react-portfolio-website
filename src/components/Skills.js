@@ -1,8 +1,11 @@
-import meter95 from "../assets/img/meter1.svg";
-import meter85 from "../assets/img/meter85.svg";
-import meter60 from "../assets/img/meter60.svg";
-import meter75 from "../assets/img/meter75.svg";
-
+import Python from "../assets/img/icons8-python.svg";
+import Swift from "../assets/img/icons8-swift-480.svg";
+import OpenCV from "../assets/img/icons8-opencv.svg";
+import Django from "../assets/img/icons8-django.svg";
+import NLP  from "../assets/img/spacy.svg";
+import Tensorflow from "../assets/img/icons8-tensorflow.svg"
+import Flutter from "../assets/img/icons8-flutter.svg"
+import Flask from "../assets/img/flask.svg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -39,44 +42,44 @@ export const Skills = () => {
                         <p>Experienced Python Developer, proficient in Mobile Application Development, Full Stack Development Natural Language Processing and Computer Vision and Machine Learning.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                         <div className="item">
-  <img src={meter85} alt="Python Icon" />  
+  <img src={Python} alt="Python Icon" />  
   <h5>Python</h5>
 </div>
 
 <div className="item">
-  <img src={meter85} alt="Dart Icon" />
+  <img src={Flutter} alt="Dart Icon" />
   <h5>Flutter & Dart</h5>  
 </div>
 
 <div className="item">
-  <img src={meter60} alt="Swift Icon" />
+  <img src={Swift} alt="Swift Icon" />
   <h5>Swift</h5>
 </div>
 
 <div className="item">  
-  <img src={meter85} alt="Firebase Icon" />
+  <img src={Flask} alt="Flask Icon" />
   <h5>Flask</h5>
 </div>
 
 <div className="item">
-  <img src={meter60} alt="React Icon" />
+  <img src={NLP} alt="NLP Icon" />
   <h5>NLP</h5>
 </div>
 
 <div className="item">
-  <img src={meter85} alt="Machine Learning Icon" />
+  <img src={Tensorflow} alt="Machine Learning Icon" />
   <h5>Machine Learning</h5>  
 </div>
 
 <div className="item">
-  <img src={meter85} alt="Computer Vision Icon" />
+  <img src={OpenCV} alt="Computer Vision Icon" />
   <h5>Computer Vision</h5>
 </div>
 {/*https://nikitahl.github.io/svg-circle-progress-generator*/}
 
 
 <div className="item">
-  <img src={meter75} alt="Django Icon" />
+  <img src={Django} alt="Django Icon" />
   <h5>Django</h5>
 </div> 
                         </Carousel>

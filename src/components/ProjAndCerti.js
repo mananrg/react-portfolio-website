@@ -16,6 +16,26 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import ImageSlider from "./ProjectSlider";
 
+import img1 from "../assets/img/ExtraCurriculum/1.jpg";
+import img3 from "../assets/img/ExtraCurriculum/3.jpg";
+import img4 from "../assets/img/ExtraCurriculum/4.jpg";
+import img5 from "../assets/img/ExtraCurriculum/5.jpg";
+import img6 from "../assets/img/ExtraCurriculum/6.jpg";
+import img7 from "../assets/img/ExtraCurriculum/7.jpg";
+import img8 from "../assets/img/ExtraCurriculum/8.jpg";
+import img9 from "../assets/img/ExtraCurriculum/9.jpg";
+import img10 from "../assets/img/ExtraCurriculum/10.jpg";
+import img11 from "../assets/img/ExtraCurriculum/11.jpg";
+import img12 from "../assets/img/ExtraCurriculum/12.jpg";
+import img13 from "../assets/img/ExtraCurriculum/13.jpg";
+import img14 from "../assets/img/ExtraCurriculum/14.jpg";
+import img15 from "../assets/img/ExtraCurriculum/15.jpg";
+import img16 from "../assets/img/ExtraCurriculum/16.jpg";
+import img17 from "../assets/img/ExtraCurriculum/17.jpg";
+import img18 from "../assets/img/ExtraCurriculum/18.jpg";
+import img19 from "../assets/img/ExtraCurriculum/19.jpg";
+
+
 export const ProjAndCertificates = () => {
 
   const certificates = [
@@ -74,13 +94,109 @@ export const ProjAndCertificates = () => {
       imgUrl: Arduino,
     },
   ];
-const extraCurriculum = [
-  {
-    title: "IoT",
-    description: "Introduction to Arduino",
-    imgUrl: Arduino,
-  },
-]
+  const extraCurriculum = [
+    
+    {
+      title: "",
+      description: "",
+      imgUrl: img16,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img1,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img8,
+    },   {
+      title: "",
+      description: "",
+      imgUrl: img9,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img10,
+    },
+    
+    {
+      title: "",
+      description: "",
+      imgUrl: img12,
+    },   {
+      title: "",
+      description: "",
+      imgUrl: img13,
+    },
+    
+   
+    {
+      title: "",
+      description: "",
+      imgUrl: img17,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img18,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img5,
+    },
+   
+    
+    {
+      title: "",
+      description: "",
+      imgUrl: img3,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img14,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img19,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img4,
+    },
+   
+    {
+      title: "",
+      description: "",
+      imgUrl: img6,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img7,
+    },
+   
+    {
+      title: "",
+      description: "",
+      imgUrl: img15,
+    },
+    {
+      title: "",
+      description: "",
+      imgUrl: img11,
+    },{
+      title: "",
+      description: "",
+      imgUrl: img11,
+    },
+  ];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -126,8 +242,18 @@ const extraCurriculum = [
                       </Tab.Pane>
 
                       <Tab.Pane eventKey="third">
-                     Coming Soon
-                      </Tab.Pane>
+                      <Row>
+                          {
+                            extraCurriculum.map((certificate, index) => {
+                              return (
+                                <Cards
+                                  key={index}
+                                  {...certificate}
+                                />
+                              )
+                            })
+                          }
+                        </Row>                      </Tab.Pane>
 
                     </Tab.Content>
                   </Tab.Container>

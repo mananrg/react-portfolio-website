@@ -1,46 +1,54 @@
-import { useState } from "react";
+import React, { useRef, useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import emailjs from '@emailjs/browser';
+
+
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICEID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATEID;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLICKEY;
 
 export const Contact = () => {
-  const formInitialDetails = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: ''
-  }
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
+  const form = useRef();
+  const [formData, setFormData] = useState({
+    first_name: '',
+    last_name: '',
+    reply_to: '',
+    message: '',
+  });
 
-  const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
-      })
-  }
-
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
+console.log("Service ID ",serviceId)
+console.log({serviceId})
+console.log("Template ID ",templateId)
+console.log("Public Key ",publicKey)
+
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATEID, form.current, "mO9nL1o9Nwlv9aY6S")
+      .then((result) => {
+        console.log(result.text);
+        alert("Email Sent Successfully!");
+        // Reset the form data after successful submission
+        setFormData({
+          first_name: '',
+          last_name: '',
+          reply_to: '',
+          message: '',
+        });
+      }, (error) => {
+        console.log(error.text);
+        alert("Email Failed, Trying using the contact listed below");
+      });
+  };
+
+  const handleChange = (e) => {
+    // Update the form data when input values change
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
     });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-    }
   };
 
   return (
@@ -50,7 +58,7 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
               }
             </TrackVisibility>
           </Col>
@@ -58,38 +66,55 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In Touch</h2>
-                <form onSubmit={handleSubmit}>
-                  <Row>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
-                    </Col>
-                    <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
-                    </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                  <h2>Get In Touch</h2>
+                  <form ref={form} onSubmit={sendEmail}>
+                    <Row>
+                      <Col size={20} sm={6} className="px-1">
+                        <input
+                          placeholder="First Name"
+                          type="text"
+                          name="first_name"
+                          value={formData.first_name}
+                          onChange={handleChange}
+                        />
                       </Col>
-                    }
-                  </Row>
-                </form>
-              </div>}
+                      <Col size={20} sm={6} className="px-1">
+                        <input
+                          placeholder="Last Name"
+                          type="text"
+                          name="last_name"
+                          value={formData.last_name}
+                          onChange={handleChange}
+                        />
+                      </Col>
+                      <Col size={20} sm={12} className="px-1">
+                        <input
+                          placeholder="Email address"
+                          type="email"
+                          name="reply_to"
+                          value={formData.reply_to}
+                          onChange={handleChange}
+                        />
+                      </Col>
+                      <Col size={20} sm={12} className="px-1">
+                        <textarea
+                          rows="6"
+                          placeholder="Message"
+                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
+                        />
+                      </Col>
+                      <Col size={12} sm={6} className="px-1">
+                        <input className="contact-form-btn" type="submit" value="Send" />
+                      </Col>
+                    </Row>
+                  </form>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};
