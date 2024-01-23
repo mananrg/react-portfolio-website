@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a584aab1.css",
-    "main.js": "/static/js/main.7cc5a5f6.js",
+    "main.css": "/static/css/main.1f8e6450.css",
+    "main.js": "/static/js/main.361d990a.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/SecondHandz.png": "/static/media/SecondHandz.c69571283ec90b9ed7ea.png",
     "static/media/DeepLearningComputerVision.jpeg": "/static/media/DeepLearningComputerVision.d1e3249ba077805f01a1.jpeg",
@@ -12,11 +12,12 @@
     "static/media/Arduino.jpeg": "/static/media/Arduino.cb131453509cda0006bf.jpeg",
     "static/media/Esp32.jpeg": "/static/media/Esp32.a16e32baed8ed9c1b232.jpeg",
     "static/media/PortfolioWebsite.png": "/static/media/PortfolioWebsite.b8c532e168010c965cd2.png",
-    "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
-    "static/media/color-sharp2.png": "/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/5.jpg": "/static/media/5.007d7bf6ded5b067eca9.jpg",
+    "static/media/color-sharp-right.png": "/static/media/color-sharp-right.b897dd0770267f1cf43e.png",
+    "static/media/color-sharp-left.png": "/static/media/color-sharp-left.1c9ec4677f69fb12435f.png",
     "static/media/11.jpg": "/static/media/11.e99fdf4075f843633935.jpg",
     "static/media/17.jpg": "/static/media/17.ed700d7ea3d750cfd7c5.jpg",
+    "static/media/footer-bg.png": "/static/media/footer-bg.3c266ad6a13b24c77c89.png",
     "static/media/PlanetsApp.png": "/static/media/PlanetsApp.f8ea75e75a97fb72cd82.png",
     "static/media/6.jpg": "/static/media/6.98a8719c57d14b35057c.jpg",
     "static/media/7.jpg": "/static/media/7.287fa58f66d9688a3148.jpg",
@@ -42,7 +43,6 @@
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
-    "static/media/footer-bg.png": "/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/contact-img.svg": "/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/logo.png": "/static/media/logo.b91b518cdaa5c3148f79.png",
     "static/media/code.gif": "/static/media/code.b6d55c08220cb38d48c2.gif",
@@ -67,12 +67,12 @@
     "index.html": "/index.html",
     "static/media/icons8-tensorflow.svg": "/static/media/icons8-tensorflow.b52d51113646206ef6f8b489bb3c7bf5.svg",
     "static/media/icons8-flutter.svg": "/static/media/icons8-flutter.c7660c6662d5ce8fb84f923fbec530e2.svg",
-    "main.a584aab1.css.map": "/static/css/main.a584aab1.css.map",
-    "main.7cc5a5f6.js.map": "/static/js/main.7cc5a5f6.js.map",
+    "main.1f8e6450.css.map": "/static/css/main.1f8e6450.css.map",
+    "main.361d990a.js.map": "/static/js/main.361d990a.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a584aab1.css",
-    "static/js/main.7cc5a5f6.js"
+    "static/css/main.1f8e6450.css",
+    "static/js/main.361d990a.js"
   ]
 }
