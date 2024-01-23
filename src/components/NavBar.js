@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -32,16 +29,14 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
-  const resumeFilePath = process.env.PUBLIC_URL + '/resumes/resume.pdf'; // Adjust the file path accordingly
 
- 
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
-            
+
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -53,16 +48,14 @@ export const NavBar = () => {
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
               {/* <Nav.Link href="#certifications" className={activeLink === 'certifications' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('certifications')}>Certifications</Nav.Link> */}
               <Nav.Link to="/resume" className={` ${activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} white-link`}>
-  <DownloadButton />
-</Nav.Link>
-
+                <DownloadButton />
+              </Nav.Link>
             </Nav>
-           <span className="navbar-text">
-         
+            <span className="navbar-text">
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
-  </span> 
+            </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>

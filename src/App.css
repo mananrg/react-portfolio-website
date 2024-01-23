@@ -319,16 +319,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 } */
 
 /************ Banner Css ************/
-.banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url("./assets/img/wallpaper7.jpg");
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 /* Styles for screens larger than 600px */
 @media (min-width: 601px) {
+  .banner {
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-image: url("./assets/img/wallpaper7.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .banner h1 {
     font-size: 65px;
     font-weight: 700;
@@ -347,6 +348,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 /* Styles for screens smaller than 600px */
 @media (max-width: 600px) {
+  .banner {
+    margin-top: 0;
+    padding: 130px 0 100px 0;
+    background-image: url("./assets/img/wallpaper7.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .banner h1 {
     padding-top: 14px;
     font-size: 40px;
