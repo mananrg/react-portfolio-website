@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.305d4f6b.css",
-    "main.js": "/static/js/main.c0bb7f54.js",
+    "main.css": "/static/css/main.a584aab1.css",
+    "main.js": "/static/js/main.7cc5a5f6.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/SecondHandz.png": "/static/media/SecondHandz.c69571283ec90b9ed7ea.png",
     "static/media/DeepLearningComputerVision.jpeg": "/static/media/DeepLearningComputerVision.d1e3249ba077805f01a1.jpeg",
@@ -43,8 +43,8 @@
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/footer-bg.png": "/static/media/footer-bg.7bd67c0f73571d0acc02.png",
-    "static/media/logo.png": "/static/media/logo.ead163e5254d289e8d48.png",
     "static/media/contact-img.svg": "/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
+    "static/media/logo.png": "/static/media/logo.b91b518cdaa5c3148f79.png",
     "static/media/code.gif": "/static/media/code.b6d55c08220cb38d48c2.gif",
     "static/media/development.png": "/static/media/development.ec2ba861e4e2f4ceba9d.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -67,12 +67,12 @@
     "index.html": "/index.html",
     "static/media/icons8-tensorflow.svg": "/static/media/icons8-tensorflow.b52d51113646206ef6f8b489bb3c7bf5.svg",
     "static/media/icons8-flutter.svg": "/static/media/icons8-flutter.c7660c6662d5ce8fb84f923fbec530e2.svg",
-    "main.305d4f6b.css.map": "/static/css/main.305d4f6b.css.map",
-    "main.c0bb7f54.js.map": "/static/js/main.c0bb7f54.js.map",
+    "main.a584aab1.css.map": "/static/css/main.a584aab1.css.map",
+    "main.7cc5a5f6.js.map": "/static/js/main.7cc5a5f6.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.305d4f6b.css",
-    "static/js/main.c0bb7f54.js"
+    "static/css/main.a584aab1.css",
+    "static/js/main.7cc5a5f6.js"
   ]
 }
