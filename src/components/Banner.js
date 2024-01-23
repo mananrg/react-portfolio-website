@@ -59,6 +59,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Manan -`} <span className="txt-rotate" dataPeriod="1000" data-rotate={toRotate}><span className="wrap">{text}</span></span></h1>
+
                 <p>I am a software engineer and machine learning specialist with expertise in Python, Flutter, and other programming languages. Over 2+ years of experience developing full-stack mobile and web applications, integrating APIs, and leveraging cutting-edge technologies like computer vision and natural language processing.</p>
                 <DownloadButton />
               </div>}
