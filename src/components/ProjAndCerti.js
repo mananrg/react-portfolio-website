@@ -11,7 +11,7 @@ import MachineLearningND from "../assets/img/Certificates/machine-learning-nanod
 import NLP from "../assets/img/Certificates/NLP.jpeg";
 import PythonND from "../assets/img/Certificates/python-nanodegree.svg";
 import tensorflow from "../assets/img/Certificates/tensorflow.jpeg";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import colorSharp2 from "../assets/img/color-sharp-right.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import ImageSlider from "./ProjectSlider";

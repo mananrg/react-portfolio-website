@@ -9,7 +9,7 @@ import Flask from "../assets/img/flask.svg"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp-left.png"
 
 export const Skills = () => {
   const responsive = {
