@@ -67,7 +67,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""} id="phoneImg">
                   <img src={headerImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility> 

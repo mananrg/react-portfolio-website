@@ -82,6 +82,18 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+}
+
+
+/* Styles for screens larger than 600px */
+@media (min-width: 601px) {
+  nav.navbar a.navbar-brand {
+    width: 9%;
+}
 nav.navbar {
   padding: 4px 0 4px;
   position: fixed;
@@ -91,12 +103,21 @@ nav.navbar {
   transition:  0.32s ease-in-out;
   backdrop-filter: blur(60px);
 }
-nav.navbar.scrolled {
-  padding: 0px 0;
-  background-color: #121212;
 }
-nav.navbar a.navbar-brand {
-    width: 9%;
+@media (max-width: 600px) {
+  nav.navbar a.navbar-brand {
+    width: 25%;
+    padding-left: 5px;
+}
+nav.navbar {
+  padding: 4px 0 4px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+  backdrop-filter: blur(60px);
+}
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -305,6 +326,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
   border-right: 0.08em solid #666;
 }
 
+@media (max-width: 600px) {
+  #phoneImg{
+    width: 0% !important;
+  }
+}
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
@@ -352,9 +379,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding-left: 11px;
+  padding-right: 7px;
   position: relative;
-  padding-right: 40px;
+
   /* background: linear-gradient(90.21deg, rgba(1, 255, 167, 0.8) -5.91%, rgba(1, 255, 234, 0.8) 111.58%); */
 }
 .project-certificate-title{
@@ -509,12 +537,18 @@ background-color: white;
 /************ Project Css ***********/
 .project-slider{
   display: inline-block;
-  width: auto;
   position: relative;
+  justify-content: center;
+      align-items: center;
+
+  
 }
 .project-slider-div{
-  display: inline;
-  width: 320px !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -525,35 +559,118 @@ background-color: white;
   bottom: 0;
   right: 0;
 }
-/************ Projects Css ************/
-form{
-  padding-top: 30px;
+/************ Form Css ************/
+
+@media (max-width: 600px) {
+  form {
   width: 100% !important;
+  padding-left: 8px;
+  padding-right: 8px;
+  }
 }
 
-.contact {
-  padding: 60px 0 200px 0;
+/* Styles for screens larger than 600px */
+@media (min-width: 601px) {
+  form {
+    padding-top: 30px;
+    width: 100% !important;  
+
+  }
 }
-.contact img {
-  width: 92%;
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 0px 0 40px 0;
+  }
 }
-.contact h2 {
-  font-size: 60px;
+
+/* Styles for screens larger than 600px */
+@media (min-width: 601px) {
+  .contact {
+    padding: 60px 0 200px 0;
+  }
 }
-form input,  form textarea {
-  width: 100% !important;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  margin-bottom: 15px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
+
+@media (max-width: 600px) {
+  .contact img {
+width: 0;
+  }
 }
+
+/* Styles for screens larger than 600px */
+@media (min-width: 601px) {
+  .contact img {
+    width: 92%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contact h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  form input,  form textarea {
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 9px 13px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+  .contact-form-btn {
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    padding: 7px 24px;
+    font-size: 18px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    border-radius: 4px;
+  }
+}
+
+/* Styles for screens larger than 600px */
+@media (min-width: 601px) {
+  .contact h2 {
+    font-size: 60px;
+  }
+  form input,  form textarea {
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .contact-form-btn {
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    padding: 14px 48px;
+    font-size: 18px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    border-radius: 4px;
+  }
+}
+
+
 .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
@@ -567,18 +684,7 @@ form input,  form textarea {
   color: #121212;
   opacity: 0.8;
 }
-.contact-form-btn {
-  font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  border-radius: 0;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  border-radius: 4px;
 
-}
 .contact-form-btn span {
   z-index: 1;
   position: relative;
@@ -605,17 +711,50 @@ form input,  form textarea {
 
 
 /************ Footer Css ************/
+@media (max-width: 600px) {
+  form {
+  width: 100% !important;
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+  .footer img {
+    width: 0%;
+
+  }
+  .contact-padding p{
+    margin: 0 !important;
+    padding-top: 2px !important;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+}
+
+/* Styles for screens larger than 600px */
+@media (min-width: 601px) {
+  form {
+    padding-top: 30px;
+    width: 100% !important;  
+  }
+
+  .footer img {
+    width: 26%;
+  }
+  .contact-padding p{
+    margin: 0 !important;
+    padding-top: 8px !important;
+    
+  }
+}
 .footer {
-  padding: 50px 0 10px 0;
+  padding: 20px 0 20px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.contact-padding p{
-  margin: 0 !important;
-  padding-top: 2px !important;
-}
+
 .newsletter-bx {
   background: #FFFFFF;
   border-radius: 55px;
@@ -676,9 +815,7 @@ form input,  form textarea {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
-.footer img {
-  width: 26%;
-}
+
 .footer p {
   font-weight: 400;
   font-size: 14px;

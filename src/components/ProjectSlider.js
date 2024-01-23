@@ -19,7 +19,7 @@ const settings = {
   dots: true,
   infinite: false,
   speed: 500,
-  slidesToScroll: 3, // Scroll only one project at a time
+  slidesToScroll: 1, // Scroll only one project at a time
   slidesToShow: 3,
 
   responsive: [
