@@ -1,36 +1,54 @@
 # Personal Portfolio Website in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Preview
+You can preview the project live [here](https://fluttersolutions.in/).
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="https://user-images.githubusercontent.com/50160672/174933373-1ba6cadf-1c9a-48c3-aa58-984d0bd62d82.png">
+Description
+This repository is regarding my portfolio website depicting my portfolio built using React and BootStrap. It is currently hosted live. I have also attached screenshots if you are unable to preview it.
 
-Built using:
+## Screenshots
+
+![Home Screen](web-1.png)
+![Portfolio and Projects](web-2.png)
+![Contact Screen](web-3.png)
+
+## Built using:
 
 - Front-end library: React
 - CSS framework: React-bootstrap
 - CSS animations library: Animate.css
+- EmaiJS for contact form: EmailJS
 
-In the /personal-portfolio, you can run:
+Path for Resume & Certificates
+- public/resumes
+- src/assets/Certificates 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Set-Up EmailJS
+[EmailJS Documentation](https://www.emailjs.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Create a .env file on the top hierarchy and add the below
 
-### `npm test`
+> REACT_APP_EMAILJS_SERVICEID = "add your key"
+> REACT_APP_EMAILJS_TEMPLATEID = "add your templateID"
+> REACT_APP_EMAILJS_PUBLICKEY = "add your public key"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+##  In the /personal-portfolio, you can run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Start the app
+
+```sh
+npm start
+```
+
+3. Build the app
+```sh
+npm run build
+```
